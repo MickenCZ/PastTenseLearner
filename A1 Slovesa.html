@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Procvičování A1 sloves Němčina">
+  <title>Procvičování sloves</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
+  <link rel="icon" href="./DE-Germany-Flag-icon.png" type="image/x-icon">
+  <script>
+    const data = [["beginnen", "begann", "begonnen"], ["bieten", "bot", "geboten"], ["bitten", "bat", "gebeten"], ["bleiben", "blieb", "geblieben"], ["bringen", "brachte", "gebracht"], ["denken", "dachte", "gedacht"], ["dürfen", "durfte", "gedurft"], ["empfehlen", "empfahl", "empfohlen"], ["essen", "aß", "gegessen"], ["fahren", "fuhr", "gefahren"], ["fallen", "fiel", "gefallen"], ["finden", "fand", "gefunden"], ["fliegen", "flog", "geflogen"], ["fließen", "floss", "geflossen"], ["geben", "gab", "gegeben"], ["gehen", "ging", "gegangen"], ["gewinnen", "gewann", "gewonnen"], ["gießen", "goss", "gegossen"], ["haben", "hatte", "gehabt"], ["heißen", "hieß", "geheißen"], ["helfen", "half", "geholfen"], ["kennen", "kannte", "gekannt"], ["kommen", "kam", "gekommen"], ["können", "konnte", "gekonnt"], ["lassen", "ließ", "gelassen"], ["laufen", "lief", "gelaufen"], ["lesen", "las", "gelesen"], ["liegen", "lag", "gelegen"], ["mögen", "mochte", "gemocht"], ["müssen", "musste", "gemusst"], ["nehmen", "nahm", "genommen"], ["nennen", "nannte", "gennant"], ["rufen", "rief", "gerufen"], ["schlafen", "schlief", "geschlafen"], ["schlagen", "schlug", "geschlagen"], ["schließen", "schloss", "geschlossen"], ["schreiben", "schrieb", "geschrieben"], ["sehen", "sah", "gesehen"], ["sein", "war", "gewesen"], ["singen", "sang", "gesungen"], ["sitzen", "saß", "gesessen",], ["sollen", "sollte", "gesollt"], ["sprechen", "sprach", "gesprochen"], ["springen", "sprang", "gesprungen"], ["stehen", "stand", "gestanden"], ["steigen", "stieg", "gestiegen"], ["sterben", "starb", "gestorben"], ["tragen", "trug", "getragen"], ["treffen", "traf", "getroffen"], ["trinken", "trank", "getrunken"], ["tun", "tat", "getan"], ["vergessen", "vergaß", "vergessen"], ["wachsen", "wuchs", "gewachsen"], ["waschen", "wusch", "gewaschen"], ["wiegen", "wog", "gewogen"], ["wissen", "wusste", "gewusst"], ["wollen", "wollte", "gewollt"], ["ziehen", "zog", "gezogen"]]
+  </script>
+</head>
+<body>
+  <header id="verb"></header>
+
+  <main id="main" >
+    <div class="tile">
+      <label for="prateritum">Präteritum</label> 
+      <input id="prateritum" />
+      <p class="correction" id="prateritum-correction">​</p>
+    </div>
+    <div class="tile">
+      <label for="perfektum">Perfektum</label> 
+      <input id="perfektum" />
+      <p class="correction" id="perfektum-correction">​</p>
+    </div>
+    <div class="tile">
+      <button id="check" onclick="main()">Zkontrolovat</button>
+    </div>
+  </main>
+  <footer>
+    <a href="https://znakynaklavesnici.cz/ostre-s-na-klavesnici/" target="_blank" name="pomocNaPsaniß">
+      <img src="1200px-Blue_question_mark_icon.svg.png" id="img" alt="jak psát ß" />
+    </a>
+  </footer>
+</body>
+</html>
